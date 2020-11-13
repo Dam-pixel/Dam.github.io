@@ -1,0 +1,102 @@
+/* font-family: 'Uni Neue';
+font-family: 'Uni Neue Book'; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+}
+
+.container {
+    width: 1260px;
+    /* background-color: red;
+    height: 200px; */
+    margin: 0 auto;
+}
+
+.header {
+    height: 800px;
+    background-color: #eef9ff;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 26px;
+}
+
+.logo {
+    display: flex;
+    /* text-align: center; */
+
+}
+
+.logo_title {
+    position: relative;
+    font-family: Uni Neue, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    color: #363636;
+    padding-right: 27px;
+}
+
+.logo_title::after {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #dddd;
+}
+
+
+
+
+.logo_slogan {
+    /*  Сertified coach in thetahealing*/
+
+
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.17;
+    /* or 117% */
+
+    color: #4B5455;
+    padding-left: 27px;
+    width: 160px;
+    font-family: Uni Neue, sans-serif;
+
+}
+
+/* .top-nav {
+        
+
+    } */
+
+.top-nav_link {
+    font-family: Uni Neue;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none;
+    margin-right: 48px;
+
+
+    color: #363636;
+}
+
+.top-nav_link:last-child {
+    margin-right: 0;
+}
