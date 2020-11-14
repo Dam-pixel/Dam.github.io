@@ -27,7 +27,10 @@ body {
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 26px;
+    margin-bottom: 60px;
+
 }
 
 .logo {
@@ -99,4 +102,90 @@ body {
 
 .top-nav_link:last-child {
     margin-right: 0;
+}
+
+.top-nav_link:hover {
+    color: #69B0AC;
+    transition: 0.3s;
+
+}
+
+.header_content {
+    width:640px;
+    margin-left: 130px;
+    
+ 
+}
+
+.header_title {
+    font-family: Uni Neue Book, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.1;
+    /* or 110% */
+
+
+    color: #363636;
+}
+
+.header_title span {
+    font-family: Uni Neue, sans-serif;
+    color: #69B0AC;
+    /* or 110% */
+}
+
+.header_text {
+    width: 440px;
+    margin-bottom: 30px;
+}
+
+.header_text p {
+    font-family: Uni Neue;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.75;
+/* or 175% */
+
+
+color: #b3b3b3;
+}
+
+.header-list {
+    font-family: Uni Neue;
+font-style: normal;
+
+font-size: 16px;
+line-height: 1.5;
+list-style-type: none;
+margin: 0;
+padding: 0;
+
+
+color: #363636;
+
+}
+
+.header-list b {
+font-weight: 700;
+    
+}
+
+.header-list_item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 40px;
+}
+
+.header-list_item::before {
+    content: "";
+    width: 20px;
+    height: 23px;
+    
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background-image: url(../images/bullet.svg);
+
 }
