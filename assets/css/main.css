@@ -232,13 +232,13 @@ body {
 
 /* section-about */
 .section-about {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 123px;
 }
 
 
 .section-about_heading {
-    margin-bottom: 61px;
+    margin-bottom: 40px;
     font-family: Uni Neue Book, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -257,7 +257,11 @@ body {
     ;
 }
 
-.section-about_row {}
+.section-about_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 .section-about_video {}
 
@@ -266,9 +270,9 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 600px;
-    height: 340px;
-    border-radius: 20px;
+    width: 426px;
+    height: 240px;
+    border-radius: 30px;
     border: 10px solid white;
     overflow: hidden;
     background: radial-gradient(25.3% 57.25% at 50% 50%, rgba(80, 152, 190, 0.5) 0%, rgba(52, 113, 146, 0.76) 100%), url(../images/preview.jpg);
@@ -288,14 +292,76 @@ body {
 
 
 .promo-video_play-btn {
-width: 80px;
-height: 84px;
-border: none;
-background-color: transparent;
+    position: relative;
+    width: 80px;
+    height: 84px;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
 
+}
+
+
+.promo-video_play-btn::after {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    background: rgba(162, 173, 255, 0.2);
+    transform: translate(-50%, -50%);
+    animation: wave 3s ease-out infinite;
+
+}
+
+@keyframes wave {
+
+    from {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* 50% {
+    width: 180px;
+    height: 180px;
+} */
+    to {
+        width: 180px;
+        height: 180px;
+        opacity: 0;
+    }
 }
 
 
 
 
-.section-about_text {}
+
+
+.section-about_text {
+    font-family: Uni Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.75;
+    /* or 175% */
+
+
+    color: #545454;
+
+}
+
+.section-about_text strong {
+    font-weight: 700;
+}
+
+
+
+.section-about_text p {
+    margin-top: 0;
+    margin-bottom: 18px;
+    margin-left: 46px;
+    margin-right: 120px;
+}
